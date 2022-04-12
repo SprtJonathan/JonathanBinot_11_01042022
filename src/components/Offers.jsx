@@ -1,5 +1,5 @@
 import logements from "../assets/data/logements.json";
-import "../styles/Logements.css";
+import "../styles/offers.css";
 
 function LogementsList() {
   return (
