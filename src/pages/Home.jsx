@@ -1,5 +1,6 @@
+import "../styles/Index.css";
 import "../styles/Home.css";
-import Banner from "../components/Header/Banner";
+import Banner from "../components/Banner";
 import LogementsList from "../components/Offers";
 
 import banniere from "../assets/img/Banner.png";

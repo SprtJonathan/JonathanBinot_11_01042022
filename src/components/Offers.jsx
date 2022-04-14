@@ -1,20 +1,22 @@
 import logements from "../assets/data/logements.json";
-import "../styles/offers.css";
+import "../styles/Offers.css";
+import { Link } from "react-router-dom";
 
 function LogementsList() {
   return (
     <div className="list">
       {logements.map((mappedObject) => (
-        <div
+        <Link
           id={`${mappedObject.id}`}
           key={`${mappedObject.title}`}
           className="thumb"
           style={{
             backgroundImage: `url(${mappedObject.cover})`,
           }}
+          to={`/lodging?${mappedObject.id}`}
         >
           <h3 className="thumb--title">{mappedObject.title}</h3>
-        </div>
+        </Link>
       ))}
     </div>
   );

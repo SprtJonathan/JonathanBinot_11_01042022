@@ -1,0 +1,71 @@
+.page-not-found {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  align-items: center;
+  width: 90%;
+}
+.error-block-h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 142.6%;
+  align-items: center;
+  text-align: center;
+
+  color: #ff6060;
+}
+
+.error-block-p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.return-home {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  /* identical to box height, or 20px */
+
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+
+  margin-top: 5rem;
+
+  color: #ff6060;
+}
+
+@media (min-width: 720px) {
+  .error-block-h1 {
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    margin: 0;
+  }
+  .error-block-p {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+  }
+  .return-home {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+}
