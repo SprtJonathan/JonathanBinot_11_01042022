@@ -31,9 +31,9 @@
   padding-right: 5px;
 }
 
-.dropdown-block {
+.collapsible-block {
 }
-.dropdown-title {
+.collapsible-title {
   display: flex;
   background: #ff6060;
   border-radius: 10px;
@@ -50,9 +50,17 @@
 
   padding: 5px 10px;
 }
-.dropdown-button {
+.collapsible-button {
 }
-.dropdown-description {
+.collapsible-icon-down {
+  transform: rotate(180deg);
+}
+.collapsible-icon-up {
+  transform: rotate(0deg);
+}
+
+.collapsible-description {
+  display: flex;
   background: #f7f7f7;
   border-radius: 5px;
   font-weight: 400;
@@ -61,6 +69,10 @@
   /* or 17px */
   padding: 1rem;
   color: #ff6060;
+}
+
+.hide {
+  display: none;
 }
 
 @media (min-width: 720px) {

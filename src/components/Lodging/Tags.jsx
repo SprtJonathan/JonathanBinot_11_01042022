@@ -1,5 +1,4 @@
 function Tags(array) {
-  console.log(array.array.split(",").map((mappedObject) => mappedObject));
   return (
     <div className="tag-block">
       {array.array.split(",").map((mappedObject) => (
