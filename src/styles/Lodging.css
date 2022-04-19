@@ -8,7 +8,7 @@
 .tag {
   background: #ff6060;
   border-radius: 5px;
-  margin: 10px;
+  margin: 5px 10px 5px 0px;
   min-width: 84px;
   height: 18px;
 }
@@ -32,11 +32,15 @@
 }
 
 .collapsible-block {
+  width: 100%;
+  margin: 15px auto;
 }
 .collapsible-title {
+  position: relative;
   display: flex;
+  z-index: 3;
   background: #ff6060;
-  border-radius: 10px;
+  border-radius: 5px;
   justify-content: space-between;
   font-weight: 500;
   font-size: 13px;
@@ -50,8 +54,11 @@
 
   padding: 5px 10px;
 }
-.collapsible-button {
+
+.collapsible-title:hover {
+  cursor: pointer;
 }
+
 .collapsible-icon-down {
   transform: rotate(180deg);
 }
@@ -60,19 +67,88 @@
 }
 
 .collapsible-description {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  z-index: 2;
   background: #f7f7f7;
   border-radius: 5px;
   font-weight: 400;
   font-size: 12px;
   line-height: 142.6%;
   /* or 17px */
-  padding: 1rem;
+  color: #ff6060;
+  margin-top: -0.5rem;
+  padding: 1rem 10px;
+}
+
+.star {
+  font-size: 15px;
+  color: #e3e3e3;
+}
+.rated {
   color: #ff6060;
 }
 
 .hide {
   display: none;
+}
+
+.lodging {
+  width: 90%;
+  margin: auto;
+}
+
+.title-location-tags {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+}
+
+.lodging-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.lodging-location {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px 0px 5px 0px;
+}
+
+.host-photo-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.host-name-photo {
+  display: flex;
+}
+
+.host-name {
+  width: 80px;
+  margin: 0;
+  font-size: 12px;
+  /* or 17px */
+
+  color: #ff6060;
+}
+
+.host-photo {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.description-equipments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.collapsible-lodging-div {
+  width: 100%;
 }
 
 @media (min-width: 720px) {
@@ -86,5 +162,56 @@
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .collapsible-title {
+    font-size: 18px;
+  }
+
+  .collapsible-description {
+    font-size: 18px;
+  }
+
+  .lodging-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .lodging-title {
+    font-size: 36px;
+  }
+
+  .lodging-location {
+    font-size: 18px;
+  }
+
+  .host-photo-stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .host-name {
+    font-size: 18px;
+  }
+
+  .host-photo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .star {
+    font-size: 30px;
+  }
+
+  .description-equipments {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .collapsible-lodging-div {
+    width: 40%;
   }
 }

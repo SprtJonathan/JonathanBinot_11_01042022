@@ -1,0 +1,27 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 415px;
+  mix-blend-mode: normal;
+  border-radius: 25px;
+}
+
+.index {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #ffffff;
+  margin-top: 30%;
+}
+
+.chevron-buttons {
+  margin: 1rem;
+}

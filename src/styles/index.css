@@ -4,6 +4,10 @@ body {
   font-style: normal;
 }
 
+body::after {
+  height: 209px;
+}
+
 code {
   font-family: "Montserrat";
   font-style: normal;

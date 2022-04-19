@@ -2,9 +2,30 @@ import React, { useState } from "react";
 
 function Collapsible({ id, title, description }) {
   const [isOpen, setIsOpen] = useState(false);
+  //console.log(description);
+
+  let displayDescription;
+
+  createDescription(description);
+
+  function createDescription(element) {
+    if (typeof element === "string") {
+      return (displayDescription = <div>{description}</div>);
+    } else {
+      return (displayDescription = (
+        <div>
+          {element.map((elt) => (
+            <div className="collapse__list" key={elt}>
+              {elt}
+            </div>
+          ))}
+        </div>
+      ));
+    }
+  }
 
   return (
-    <div>
+    <div className="collapsible-block">
       <div
         id={`collapsible-title-${id}`}
         className="collapsible-title"
@@ -33,7 +54,7 @@ function Collapsible({ id, title, description }) {
         id={`collapsible-description-${id}`}
         className={isOpen ? "collapsible-description" : "hide"}
       >
-        <div>{description}</div>
+        <div>{displayDescription}</div>
       </div>
     </div>
   );
