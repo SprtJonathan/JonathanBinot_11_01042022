@@ -1,18 +1,18 @@
-function Rating(score) {
-  for (let i=0; i<5; i++){
-    if (score >= i){
-        <span className="star rated">&#9733;</span>
+function Rating(param) {
+  const score = param.score;
+  let ratingElements = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < score) {
+      ratingElements.push("star rated");
     } else {
-        <span className="star">&#9733;</span>
+      ratingElements.push("star");
     }
   }
   return (
     <div className="ratings">
-      <span className="star">&#9733;</span>
-      <span className="star">&#9733;</span>
-      <span className="star">&#9733;</span>
-      <span className="star">&#9733;</span>
-      <span className="star">&#9733;</span>
+      {ratingElements.map((stars) => (
+        <span className={stars}>&#9733;</span>
+      ))}
     </div>
   );
 }
