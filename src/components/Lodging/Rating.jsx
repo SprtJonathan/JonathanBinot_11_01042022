@@ -1,3 +1,5 @@
+import "../../styles/Rating.css"
+
 function Rating(param) {
   const score = param.score;
   let ratingElements = [];

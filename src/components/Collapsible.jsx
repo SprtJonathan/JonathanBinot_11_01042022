@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "../styles/Collapsible.css"
+
 function Collapsible({ id, title, description }) {
   const [isOpen, setIsOpen] = useState(false);
   //console.log(description);

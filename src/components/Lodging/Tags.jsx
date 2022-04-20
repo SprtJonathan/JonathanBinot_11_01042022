@@ -1,3 +1,5 @@
+import "../../styles/Tags.css"
+
 function Tags(array) {
   return (
     <div className="tag-block">
