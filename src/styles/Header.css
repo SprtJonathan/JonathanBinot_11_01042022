@@ -3,6 +3,10 @@
   margin: 30px 0px;
 }
 
+.active {
+  border-bottom: 1px solid #ff6060;
+}
+
 .banner {
   display: flex;
   flex-direction: row;

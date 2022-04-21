@@ -14,6 +14,7 @@
   overflow: hidden;
   border-radius: 25px;
   margin: 0.5rem;
+  text-decoration: none;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -21,12 +22,19 @@
 }
 
 .thumb--title {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+  text-align: left;
+  margin: 75% 10px 10px 10px;
+  display: flex;
+  align-items: flex-end;
   color: white;
-  z-index: 2;
-  left: 0;
+
+  text-shadow: 1px 1px 5px black;
 }
 
 @media (min-width: 720px) {
@@ -42,6 +50,6 @@
   }
 
   .thumb--title {
-    margin-top: 80%;
+    margin-top: 85%;
   }
 }
