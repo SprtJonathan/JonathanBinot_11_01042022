@@ -9,6 +9,7 @@ function About() {
       <Banner
         backgroundValue={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${banniere})`}
+        nameOfClass="about-banner"
       />
       <div className="about-collapsible">
         <Collapsible

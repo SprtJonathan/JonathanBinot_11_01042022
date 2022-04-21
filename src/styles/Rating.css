@@ -1,3 +1,9 @@
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
 .star {
   font-size: 15px;
   color: #e3e3e3;

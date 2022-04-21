@@ -9,6 +9,30 @@
   pointer-events: none;
 }
 
+.website-banner {
+  display: flex;
+  width: 95%;
+  min-height: 111px;
+  border-radius: 10px;
+  margin: 30px auto;
+  justify-content: space-between;
+  align-items: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.website-banner-text {
+  margin: auto;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +58,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 720px) {
+  .website-banner {
+    width: 90%;
+    height: 225px;
+    border-radius: 25px;
+  }
+  .website-banner-text {
+    font-size: 48px;
   }
 }

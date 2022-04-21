@@ -3,9 +3,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 415px;
+  height: 255px;
   mix-blend-mode: normal;
   border-radius: 25px;
+}
+
+.index-block {
+  height: 100%;
+  display: flex;
+  align-items: bottom;
 }
 
 .index {
@@ -19,10 +25,29 @@
   text-align: center;
 
   color: #ffffff;
-  margin-top: 40%;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 20px black;
 }
 
 .chevron-buttons {
+  color: #ffffff;
   margin: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 20px black;
+  transition: all 0.5s;
+}
+.chevron-buttons:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+@media (min-width: 720px) {
+  .carousel {
+    height: 415px;
+  }
+
+  .chevron-buttons {
+    font-size: 80px;
+  }
 }

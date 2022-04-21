@@ -1,12 +1,9 @@
-function Banner({ text, backgroundValue }) {
+function Banner({ text, backgroundValue, nameOfClass }) {
   return (
     <div
-      className="website-banner"
+      className={nameOfClass}
       style={{
-        background: `${backgroundValue}`,
-        backgroundPosition: `center`,
-        backgroundRepeat: `no-repeat`,
-        backgroundSize: `cover`,
+        backgroundImage: `${backgroundValue}`,
       }}
     >
       <h2 className="website-banner-text">{text}</h2>
