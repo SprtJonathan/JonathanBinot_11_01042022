@@ -7,15 +7,6 @@
   border-bottom: 1px solid #ff6060;
 }
 
-.banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-  margin: auto;
-}
-
 .website-logo {
   pointer-events: none;
   height: 32px;
@@ -29,11 +20,6 @@
 }
 
 @media (min-width: 720px) {
-  .banner {
-    width: 90%;
-    margin: auto;
-  }
-
   .website-logo {
     height: 64px;
   }

@@ -1,3 +1,5 @@
+import "./Banner.css"
+
 function Banner({ text, backgroundValue, nameOfClass }) {
   return (
     <div

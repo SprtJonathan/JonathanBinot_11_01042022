@@ -1,5 +1,5 @@
-import logements from "../assets/data/logements.json";
-import "../styles/Offers.css";
+import logements from "../../assets/data/logements.json";
+import "./Offers.css";
 import { Link } from "react-router-dom";
 
 function LogementsList() {

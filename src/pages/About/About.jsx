@@ -1,7 +1,7 @@
-import Banner from "../components/Banner";
-import Collapsible from "../components/Collapsible";
-import banniere from "../assets/img/about-banner.png";
-import "../styles/About.css";
+import Banner from "../../components/Banner/Banner";
+import Collapsible from "../../components/Collapsible/Collapsible";
+import banniere from "../../assets/img/about-banner.png";
+import "./About.css";
 
 function About() {
   return (

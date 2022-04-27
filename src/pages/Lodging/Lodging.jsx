@@ -1,11 +1,11 @@
-import logements from "../assets/data/logements.json";
-import Tags from "../components/Lodging/Tags";
-import Carousel from "../components/Carousel";
-import Collapsible from "../components/Collapsible";
-import Rating from "../components/Lodging/Rating";
-import "../styles/Lodging.css";
+import logements from "../../assets/data/logements.json";
+import Tags from "../../components/Tags/Tags";
+import Carousel from "../../components/Carousel/Carousel";
+import Collapsible from "../../components/Collapsible/Collapsible";
+import Rating from "../../components/Rating/Rating";
+import "./Lodging.css";
 
-import NotFound from "./404Page";
+import NotFound from "../404Page/404Page";
 
 function Lodging() {
   const url = window.location.href;

@@ -1,4 +1,4 @@
-import "../../styles/Rating.css";
+import "./Rating.css";
 
 function Rating(param) {
   const score = param.score;

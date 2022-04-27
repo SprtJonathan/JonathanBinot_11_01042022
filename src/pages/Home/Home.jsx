@@ -1,11 +1,10 @@
-import "../styles/index.css";
-import "../styles/Home.css";
-import Banner from "../components/Banner";
-import LogementsList from "../components/Offers";
-
 //import { useLocation } from "react-router-dom";
+import "../index.css";
+import "./Home.css";
+import Banner from "../../components/Banner/Banner";
+import LogementsList from "../../components/Offers/Offers";
 
-import banniere from "../assets/img/Banner.png";
+import banniere from "../../assets/img/Banner.png";
 
 function Home() {
   //const location = useLocation();
