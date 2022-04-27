@@ -1,4 +1,4 @@
-import "../styles/Index.css";
+import "../styles/index.css";
 import "../styles/Home.css";
 import Banner from "../components/Banner";
 import LogementsList from "../components/Offers";

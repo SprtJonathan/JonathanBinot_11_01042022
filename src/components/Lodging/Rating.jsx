@@ -1,4 +1,4 @@
-import "../../styles/Rating.css"
+import "../../styles/Rating.css";
 
 function Rating(param) {
   const score = param.score;
@@ -12,8 +12,10 @@ function Rating(param) {
   }
   return (
     <div className="ratings">
-      {ratingElements.map((stars) => (
-        <span className={stars}>&#9733;</span>
+      {ratingElements.map((stars, i) => (
+        <span className={stars} key={i}>
+          &#9733;
+        </span>
       ))}
     </div>
   );

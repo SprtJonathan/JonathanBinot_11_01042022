@@ -6,9 +6,7 @@ function Header() {
   return (
     <div className="header">
       <div className="banner">
-        <a className="website-logo-link">
-          <img className="website-logo" src={logo} alt="Kasa logo"></img>
-        </a>
+        <img className="website-logo" src={logo} alt="Kasa logo"></img>
         <nav className="menu">
           <NavLink
             exact={true}
