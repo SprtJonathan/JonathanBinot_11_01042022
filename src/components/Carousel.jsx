@@ -6,9 +6,9 @@ function Carousel(pictures) {
 
   const array = pictures.pictures;
   const arrayLength = array.length;
-  let moreThanOnePicture = array.length > 1;
+  let moreThanOnePicture = array.length > 1; // Variable indiquant si l'annonce comporte plus d'une image d'illustration
 
-  console.log(moreThanOnePicture);
+  //console.log(moreThanOnePicture);
 
   let [backgroundValue, changeBackground] = useState(array[currentIndex]);
 
@@ -25,7 +25,7 @@ function Carousel(pictures) {
     changeIndex(currentIndex);
     changeBackground((backgroundValue = array[currentIndex]));
 
-    console.log(backgroundValue);
+    //console.log(backgroundValue);
   }
 
   return (
